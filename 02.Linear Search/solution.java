@@ -1,29 +1,29 @@
 
-// import java.lang.reflect.Array;
+import java.lang.reflect.Array;
 
-// Simple Linear Search Code 
-// class solution {
-//     public static void main(String[] args) {
-//         int[] nums = {1,2,3,4,5,6,7,8,9,0};
-//         int target = 7;
-//         int ans = LinearSearch(nums,target);
-//         System.out.println(ans);
-//     }
+Simple Linear Search Code 
+class solution {
+    public static void main(String[] args) {
+        int[] nums = {1,2,3,4,5,6,7,8,9,0};
+        int target = 7;
+        int ans = LinearSearch(nums,target);
+        System.out.println(ans);
+    }
 
-//     static int LinearSearch(int[] arr,int target){
-//         if (arr.length==0){
-//             return -1 ;
-//         }
-//         for (int index = 0; index < arr.length; index++) {
-//             int element = arr[index];
-//             if (target==element){
-//                 return index;
-//             }
-//         }
-//     return -1;
-//     }
+    static int LinearSearch(int[] arr,int target){
+        if (arr.length==0){
+            return -1 ;
+        }
+        for (int index = 0; index < arr.length; index++) {
+            int element = arr[index];
+            if (target==element){
+                return index;
+            }
+        }
+    return -1;
+    }
 
-// }
+}
 
 // // Search in Range 
  // Finding Max and min
