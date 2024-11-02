@@ -26,8 +26,8 @@ class solution {
 }
 
 // // Search in Range 
- // Finding Max and min
- /    // Given an array nums of integers, return how many of them contain an even number of digits.
+// Finding Max and min
+// Given an array nums of integers, return how many of them contain an even number of digits.
         
 //
     //    // Example 1:
