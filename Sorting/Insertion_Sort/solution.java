@@ -1,4 +1,4 @@
-package DSA-using-Java.Sorting.Insertion_Sort;
+// package DSA-using-Java.Sorting.Insertion_Sort;
 import java.util.Arrays;
 public class solution {
     public static void main(String[] args) {
@@ -12,10 +12,9 @@ public class solution {
                 if (arr[j] < arr[j-1]){
                     swap(arr,j,j-1);
                 } else {
-                    break
+                    break;
                 }
-            }
-            
+            }  
         }
     }
     static void swap(int[] arr, int first , int second){
