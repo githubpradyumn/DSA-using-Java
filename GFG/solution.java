@@ -1,11 +1,11 @@
 public class solution {
-    // Print numbers from 1 to n without the help of loops.
+//     Print numbers from 1 to n without the help of loops.
 //    You only need to complete the function printNos() that takes n as a parameter and prints the number from 1 to n recursively.
-//
+
 //            Note: Don't print any newline, it will be added by the driver code.
-//
+
 //    Examples:
-//
+
 //    Input: n = 10
 //    Output: 1 2 3 4 5 6 7 8 9 10
 //    Input: n = 5
@@ -38,9 +38,9 @@ public class solution {
 
 //    Question Given an array, arr[] sorted in ascending order and an integer k.
 //             Return true if k is present in the array, otherwise, false.
-//
+
 //    Examples:
-//
+
 //    Input: arr[] = [1, 2, 3, 4, 6], k = 6
 //    Output: true
 //    Exlpanation: Since, 6 is present in the array at index 4 (0-based indexing), output is true.
