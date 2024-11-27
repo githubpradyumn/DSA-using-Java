@@ -1,20 +1,11 @@
 class solution {
-    public static void main(String[] args) {
-        int[] arr = {9,8,7,6,5,4,3,2,1,0};
-        int target = 4;
-        int Start = 0;
-        int End = arr.length - 1 ;
-        int ans = BinarySearch(arr, target, Start, End);
-        System.out.println(ans);
-    }
-
     public static void main(String[] args ){
         int[] arr = {1,2,3,4,5,6,7,8,9};
         int target = 8;
         int start = 0;
         int end = arr.length - 1;
-            int i = BinarySearch(arr, target, start, end);
-            System.out.println(i);
+        int i = BinarySearch(arr, target, start, end);
+        System.out.println(i);
         }
     
         static int BinarySearch(int[] arr , int target , int start , int end ) {
@@ -58,5 +49,5 @@ class solution {
 //     }
 //     return -1; 
 // }
-}
+
 
