@@ -6,6 +6,7 @@ public class solution {
         Insertion_sort(arr);
         System.out.println(Arrays.toString(arr));
     }
+    
     static void Insertion_sort(int[] arr){
         for (int idx = 0; idx < arr.length-1; idx++) {
             for (int j = i+1; j > 0; j--) {
