@@ -1,3 +1,4 @@
+package Matrix;
 // package DSA-using-Java.Arrays.Arrays basics and Operation.Lecture-01;
 
 public class Multiplication_of_2D_array {
