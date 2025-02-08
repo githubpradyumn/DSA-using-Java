@@ -1,24 +1,20 @@
-class StackLinkedList {
-    private class Node {
-        int data;
-        Node next;
+class StackArray {
+    private int[] stack;
+    private int top;
+    private int capacity;
 
-        Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
-
-    private Node top;
-
-    public StackLinkedList() {
-        top = null;
+    public StackArray(int size) {
+        stack = new int[size];
+        capacity = size;
+        top = -1;
     }
 
     public void push(int item) {
-        Node newNode = new Node(item);
-        newNode.next = top;
-        top = newNode;
+        if (isFull()) {
+            System.out.println("Stack Overflow");
+            return;
+        }
+        stack[++top] = item;
     }
 
     public int pop() {
@@ -26,9 +22,7 @@ class StackLinkedList {
             System.out.println("Stack Underflow");
             return -1;
         }
-        int poppedData = top.data;
-        top = top.next;
-        return poppedData;
+        return stack[top--];
     }
 
     public int peek() {
@@ -36,11 +30,15 @@ class StackLinkedList {
             System.out.println("Stack is Empty");
             return -1;
         }
-        return top.data;
+        return stack[top];
     }
 
     public boolean isEmpty() {
-        return top == null;
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        return top == capacity - 1;
     }
 
     public void display() {
@@ -48,16 +46,14 @@ class StackLinkedList {
             System.out.println("Stack is Empty");
             return;
         }
-        Node temp = top;
-        while (temp != null) {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
+        for (int i = top; i >= 0; i--) {
+            System.out.print(stack[i] + " ");
         }
         System.out.println();
     }
 
     public static void main(String[] args) {
-        StackLinkedList stack = new StackLinkedList();
+        StackArray stack = new StackArray(5);
         stack.push(10);
         stack.push(20);
         stack.push(30);
@@ -66,3 +62,4 @@ class StackLinkedList {
         stack.display();
     }
 }
+

@@ -1,4 +1,4 @@
-public class solution {
+//public class solution {
 //     Print numbers from 1 to n without the help of loops.
 //    You only need to complete the function printNos() that takes n as a parameter and prints the number from 1 to n recursively.
 
@@ -78,4 +78,4 @@ public class solution {
 //            return false;
 //        }
 //
-}
+//}
